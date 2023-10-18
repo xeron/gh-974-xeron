@@ -1,0 +1,22 @@
+{
+    "listeners": {
+        "*:8080": {
+            "pass": "applications/gh-974-xeron"
+        }
+    },
+    "applications": {
+        "gh-974-xeron": {
+            "type": "ruby",
+            "processes": {
+                "max": 5,
+                "spare": 1,
+                "idle_timeout": 60
+            },
+            "working_directory": "/app",
+            "script": "/app/config.ru",
+            "environment": {
+                "RAILS_ENV": "production"
+            }
+        }
+    }
+}
