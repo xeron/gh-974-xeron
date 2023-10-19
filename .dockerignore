@@ -40,8 +40,5 @@
 /bundle
 /vendor/bundle
 
-# Ignore unit things
-/unit
-
 # Ignore scripts
 /build_and_start.sh

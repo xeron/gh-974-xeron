@@ -11,3 +11,5 @@ RUN bundle install
 COPY . ./
 RUN ./bin/rails db:create db:migrate
 RUN ./bin/rails assets:precompile
+
+COPY unit/config/config.json /docker-entrypoint.d/
